@@ -30,83 +30,81 @@
     </header>
     <!-- Markup form -->
     <div class="layout-center-wrapper">
-     
-            <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
-            <form class="form-content__form" action="/echo" method="post">
-                <div class="user-information-block">
-                    <label for="name">Имя:</label>
-                    <input id="name" type="text" name="name" placeholder="Введите ваше имя" required>
-                    <label for="last-name">Фамилия:</label>
-                    <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию" required>
-                    <label for="patronymic">Отчество:</label>
-                    <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
-                </div>
-                <div class="progress-block">
-                    <h4>Ваши безбашенные достижения в путешествии</h4>
-                    <ul class="progress-block__list">
-                        <li class="progress-block__item">
-                            <input type="checkbox" name="selfi" id="selfi-field" checked>
-                            <label for="selfi-field">Сделал селфи с акулой</label>
-                        </li>
-                        <li class="progress-block__item">
-                            <input type="checkbox" name="beach" id="beach-field" checked>
-                            <label for="beach-field">Обгорел на пляже</label>
-                        </li>
-                        <li class="progress-block__item">
-                            <input type="checkbox" name="Chuck-Norris" id="Chuck-Norri-field" checked>
-                            <label for="Chuck-Norri-field">Видел Чака Норриса</label>
-                        </li>
-                        <li class="progress-block__item">
-                            <input type="checkbox" name="souvenir" id="souvenir-field">
-                            <label for="souvenir-field">Накупил сувениров</label>
-                        </li>
-                        <li class="progress-block__item">
-                            <input type="checkbox" name="tower" id="tower-field" checked>
-                            <label for="tower-field">Удержал башню</label>
-                        </li>
-                        <li class="progress-block__item">
-                            <input type="checkbox" name="hotel" id="hotel-field">
-                            <label for="hotel-field">Разгромил отель</label>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="form-contacts">
-                    <li class="form-contacts__item">
-                        <label for="phone-filed">Номерок телефончика</label>
-                        <input id="phone-field" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+        <form class="form-content__form" action="/echo" method="post">
+            <div class="user-information-block">
+                <label for="name">Имя:</label>
+                <input id="name" type="text" name="name" placeholder="Введите ваше имя" required>
+                <label for="last-name">Фамилия:</label>
+                <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию" required>
+                <label for="patronymic">Отчество:</label>
+                <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
+            </div>
+            <div class="progress-block">
+                <h4>Ваши безбашенные достижения в путешествии</h4>
+                <ul class="progress-block__list">
+                    <li class="progress-block__item">
+                        <input type="checkbox" name="selfi" id="selfi-field" checked>
+                        <label for="selfi-field">Сделал селфи с акулой</label>
                     </li>
-                    <li class="form-contacts__item">
-                        <label for="email-filed">Адресок почты</label>
-                        <input id="email-field" type="email" name="email" placeholder="E-mail, пожалуйста" required>
+                    <li class="progress-block__item">
+                        <input type="checkbox" name="beach" id="beach-field" checked>
+                        <label for="beach-field">Обгорел на пляже</label>
+                    </li>
+                    <li class="progress-block__item">
+                        <input type="checkbox" name="Chuck-Norris" id="Chuck-Norri-field" checked>
+                        <label for="Chuck-Norri-field">Видел Чака Норриса</label>
+                    </li>
+                    <li class="progress-block__item">
+                        <input type="checkbox" name="souvenir" id="souvenir-field">
+                        <label for="souvenir-field">Накупил сувениров</label>
+                    </li>
+                    <li class="progress-block__item">
+                        <input type="checkbox" name="tower" id="tower-field" checked>
+                        <label for="tower-field">Удержал башню</label>
+                    </li>
+                    <li class="progress-block__item">
+                        <input type="checkbox" name="hotel" id="hotel-field">
+                        <label for="hotel-field">Разгромил отель</label>
                     </li>
                 </ul>
-                <div class="form-application">
-                    <h4>С каким приложением путешествовали?</h4>
-                    <ul class="form-application__list">
-                        <li class="form-application__item">
-                            <input class="input-radio" id="ios" type="radio" name="radio" checked>
-                            <label for="ios">Pink для IOS</label>
-                        </li>
-                        <li class="form-application__item">
-                            <input class="input-radio" id="android" type="radio" name="radio">
-                            <label for="android">Pink на Android</label>
-                        </li>
-                        <li class="form-application__item">
-                            <input class="input-radio" id="w-phone" type="radio" name="radio">
-                            <label for="w-phone">Windows Phone</label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="emotion-description">
-                    <h4>Опишите свои эмоции</h4>
-                    <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="contact-text"></textarea>
-                </div>
-                <div class="form-content__send">
-                    <button class="button button-send" type="submit">Отправить форму</button>
-                    <div><sup>*</sup> — Обязательные поля</div>
-                </div>
-            </form>
-        
+            </div>
+            <ul class="form-contacts">
+                <li class="form-contacts__item">
+                    <label for="phone-filed">Номерок телефончика</label>
+                    <input id="phone-field" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
+                </li>
+                <li class="form-contacts__item">
+                    <label for="email-filed">Адресок почты</label>
+                    <input id="email-field" type="email" name="email" placeholder="E-mail, пожалуйста" required>
+                </li>
+            </ul>
+            <div class="form-application">
+                <h4>С каким приложением путешествовали?</h4>
+                <ul class="form-application__list">
+                    <li class="form-application__item">
+                        <input class="input-radio" id="ios" type="radio" name="radio" checked>
+                        <label for="ios">Pink для IOS</label>
+                    </li>
+                    <li class="form-application__item">
+                        <input class="input-radio" id="android" type="radio" name="radio">
+                        <label for="android">Pink на Android</label>
+                    </li>
+                    <li class="form-application__item">
+                        <input class="input-radio" id="w-phone" type="radio" name="radio">
+                        <label for="w-phone">Windows Phone</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="emotion-description">
+                <h4>Опишите свои эмоции</h4>
+                <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="contact-text"></textarea>
+            </div>
+            <div class="form-content__send">
+                <button class="button button-send" type="submit">Отправить форму</button>
+                <div><sup>*</sup> — Обязательные поля</div>
+            </div>
+        </form>
     </div>
     <!-- Markup footer -->
     <div class="layout-center-wrapper">
