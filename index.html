@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
+    <title>PINK | Главная</title>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic" rel="stylesheet">
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<body>
+    <!-- Markup header -->
+    <header class="header">
+        <div class="header__top-line">
+            <div class="layout-center-wrapper">
+                <a class="header__logo-link" href="#"><img src="http
+                ://placehold.it/150x100"></a>
+                <a class="header__btn-menu" href="#"><img src="http://placehold.it/150x100"></a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="#" class="header__list-item">Информация</a></li>
+                        <li><a href="#" class="header__list-item">Возможности</a></li>
+                        <li><a href="#" class="header__list-item">Отзывы</a></li>
+                        <li><a href="#" class="header__list-item">Стоимость</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="layout-center-wrapper">
+            <h1 class="header__slogan">Взгляните на жизнь иначе!</h1>
+            <div class="header__download">
+                <a class="btn header__download-btn" href="#">Скачать приложение</a>
+                <div class="header__logotypes-block">
+                    <a class="header__apple-img" href="#">Apple</a>
+                    <a class="header__android-img" href="#">Android</a>
+                    <a class="header__windows-img" href="#">Windows</a>
+                </div>
+                <div class="header__phone-types">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__slogan-white-block">
+            <img class="content__trapezium" src="http://placehold.it/150x100">
+            <div class="layout-center-wrapper">
+                <h2>Устали от серости мегаполиса?</h2>
+                <h2>Нам есть, что вам предложить!</h2>
+            </div>
+        </div>
+        <div class="layout-center-wrapper">
+            <section class="promo">
+                <article class="promo-info-block">
+                    <h3>Поднимает настроение</h3>
+                    <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </article>
+                <article class="promo-info-block">
+                    <h3>Меняет мир вокруг</h3>
+                    <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </article>
+                <article class="promo-info-block">
+                    <h3>Заводит новых друзей</h3>
+                    <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </article>
+            </section>
+            <!-- Markup slider responses -->
+            <section class="review-slider">
+                <div class="review-slider__all">
+                    <div class="review-slider__slide">
+                        <h3>Николай Петров</h3>
+                        <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                    </div>
+                    <div class="review-slider__slide">
+                        <h3>Николай Петров2</h3>
+                        <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                    </div>
+                    <div class="review-slider__slide">
+                        <h3>Николай Петров3</h3>
+                        <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                    </div>
+                </div>
+                <div class="toggle">
+                    <a class="toggle__btn toggle__btn--active" href="#">&bull;</a>
+                    <a class="toggle__btn" href="#">&bull;</a>
+                    <a class="toggle__btn" href="#">&bull;</a>
+                </div>
+            </section>
+            <!-- markup slider price -->
+            <section class="price-slider">
+                <table class="price-slider__table">
+                    <thead>
+                        <tr>
+                            <th class="price-slide">
+                                <h6 class="price-slider__col-title">База</h6>
+                                <p class="price-slider__col-text">1,99 USD</p>
+                            </th>
+                            <th class="price-slide price-slide--hit">
+                                <h6 class="price__col-title">Стандарт</h6>
+                                <p class="price__col-text">3,99 USD</p>
+                            </th>
+                            <th class="price-slide">
+                                <h6 class="price-slider__col-title">Анлим</h6>
+                                <p class="price-slider__col-text">9,99 USD</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="price__td price__td--ok">Розовый фильтр</td>
+                            <td class="price__td price__td--ok">Розовый фильтр</td>
+                            <td class="price__td">Розовый фильтр</td>
+                        </tr>
+                        <tr>
+                            <td class="price__td price__td--ok">Смайлики</td>
+                            <td class="price__td price__td--ok">Смайлики</td>
+                            <td class="price__td">Смайлики</td>
+                        </tr>
+                        <tr>
+                            <td class="price__td price__td--ok">Комментарии</td>
+                            <td class="price__td price__td--ok">Комментарии</td>
+                            <td class="price__td">Комментарии</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="toggle">
+                    <a class="toggle__btn" href="#">&bull;</a>
+                    <a class="toggle__btn toggle__btn--active" href="#">&bull;</a>
+                    <a class="toggle__btn" href="#">&bull;</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Markup footer -->
+    <footer class="footer">
+        <div class="layout-center-wrapper">
+            <div class="footer__contacts">
+                <h4 class="footer__header">Остались вопросы?<br> Свяжитесь с нами!</h4>
+                <div class="footer__call-us">
+                    <h4>Звоните:</h4>
+                    <a href="tel:+7 (812) 555-66-66"></a>
+                </div>
+                <div class="footer__write-us">
+                    <h4>Пишите:</h4>
+                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </div>
+                <div class="footer__guests">
+                    <h4>Приезжайте в гости:</h4>
+                    <p>ул. Большая Конюшенная,
+                        <br> 19/8</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__map">
+            <img class="footer__triangle" src="http://placehold.it/150x100">
+        </div>
+    </footer>
+</body>
 
-  </body>
 </html>
