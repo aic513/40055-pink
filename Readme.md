@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Морозов](https://up.htmlacademy.ru/adaptive/6/user/40055).
-* Наставник: `Неизвестно`.
+* Наставник: `Антон Попов`.
 
 ---
 
