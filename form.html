@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <title>PINK | Формы</title>
     <meta charset="utf-8">
@@ -31,8 +32,8 @@
     <!-- Markup form -->
     <div class="layout-center-wrapper">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
-        <form class="form-content__form" action="/echo" method="post">
-            <div class="user-information-block">
+        <form class="form-content" action="/echo" method="post">
+            <div class="user-info-block">
                 <label for="name">Имя:</label>
                 <input id="name" type="text" name="name" placeholder="Введите ваше имя" required>
                 <label for="last-name">Фамилия:</label>
@@ -108,25 +109,25 @@
     </div>
     <!-- Markup footer -->
     <div class="layout-center-wrapper">
-        <footer class="footer-form">
-            <a class="footer-form__logo-glasses" href="#"></a>
+        <footer class="footer-all">
+            <a class="footer-all__logo-glasses" href="#"></a>
             <div class="social-buttons">
                 <a class="social-buttons__twitter" href="#"></a>
                 <a class="social-buttons__fb" href="#"></a>
                 <a class="social-buttons__video" href="#"></a>
             </div>
-            <div class="footer__about-developers">
+            <div class="footer-all__developers">
                 <a href="#">Разработано</a>
             </div>
         </footer>
     </div>
     <!-- Popups -->
-    <div class="lose-popup">
+    <div class="apear-popup">
         <h4>Что-то пошло не так!</h4>
         <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button button--lose" type="button">Ok</button>
     </div>
-    <div class="lucky-popup">
+    <div class="appear-popup appear-popup--lucky">
         <h4>Ваша заявка отправлена</h4>
         <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
         <button class="button button--lucky" type="button">Закрыть окно</button>
