@@ -1,0 +1,39 @@
+.clear-ul() {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.inline-b() {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pos-abs(@abs: absolute, @top:0, @right:0, @bottom:0, @left:0) {
+    position: @abs;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+
+.flex(@display: flex, @flex-dir: row, @justify: space-between, @align-items: center) {
+    display: @display;
+    flex-direction: @flex-dir;
+    justify-content: @justify;
+    align-items: @align-items;
+}
+
+.clearfix() { 
+  &::after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+  }
+
+  &::before {
+  	content: ""; 
+    display: table; 
+    clear: both; 
+  } 
+} 
