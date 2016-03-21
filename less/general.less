@@ -4,8 +4,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-size:@fz-sm;
-  font-family: @font;
   line-height: 1;
   @media @tablet-width {
     width: 100%;
@@ -24,7 +24,22 @@ body * {
    height: auto;
  }
 
-html {
-  box-sizing: border-box;
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans.woff') format('woff');
+    src: url('../fonts/opensans.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('../fonts/opensansbold.woff') format('woff');
+    src: url('../fonts/opensansbold.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    src: url('../fonts/opensanslight.woff') format('woff');
+    src: url('../fonts/opensanslight.woff2') format('woff2');
 }
  

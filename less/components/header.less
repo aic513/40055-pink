@@ -1,43 +1,171 @@
-.layout-center-wrapper {
-	.clearfix();
-  width: 280px;
-  padding:0 20px;
-  margin: 0 auto;
-
-  @media @tablet-width {
-    width: 620px;
-    padding:0 40px;
-    margin: 0 auto;
-
-  }
-
-  @media @desktop-width {
-    width: 940px;
-    padding:0 130px;
-    margin: 0 auto;
-
-  }
+.header {
+    width: 100%;
+   background: url("../img/iphone-hand-mobile.png") 0% 38% no-repeat,
+              url("../img/bg-back-mobile.jpg") 50% 0% no-repeat;
+    background-position: top center;
+    background-color: @body-blue_color;
+    margin-bottom: 24px;
+    @media @tablet-width {
+        background-image: url("../img/bg-back-mobile.jpg");
+    }
+    @media @desktop-width {
+        background-image: url("../img/bg-back-mobile.jpg");
+        background-position: top center;
+    }
 }
 
+.header__top-line {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 21px 0px;
+    min-height: 45px;
+    @media @tablet-width {
+        padding-top: 41px;
+        min-height: 65px;
+    }
+    @media @desktop-width {
+        padding-top: 41px;
+        min-height: 65px;
+    }
+}
 
-// .header {
-  // width:100%;
-  // background-image: url("../img/background-mobile@1x.jpg");
-  // background-position: top center;
-  // background-repeat: no-repeat;
-  // background-color: @background-color--dark;
-  // margin-bottom: 24px;
-  
-  //   @media @screen-tablet {
-  //     background-image: url("../img/background-tablet@1x.jpg");
-  //     @retina {
-  //     background-image: url("../img/background-tablet@2x.jpg");
-  //     }
-  //     .clearfix ();
-  //   }
-  //   @media @screen-desktop {
-  //     background-image: url("../img/background-fullsize.jpg");
-  //     background-size: 107%, cover;
-  //     background-position: top center;
-  //     margin-bottom: 36px;
-  //   }
+.header__logo-link {
+    width: 75px;
+  height: 22px;
+  outline: 1px dotted white;
+  color: #ffffff;
+    color: @white;
+    .left();
+    @media @tablet-width {
+    width: 150px;
+     height: 50px;
+    
+    }
+    @media @desktop-width {
+      width: 150px;
+      height: 50px;
+    }
+}
+
+.header__btn-menu {
+    .right();
+    width: 60px;
+    height: 49px;
+    background-image: url("");
+    background-size: 428px;
+    
+    
+    @media @tablet-width {
+        .right();
+    }
+    @media @desktop-width {
+        display: none;
+    }
+}
+
+.header__menu {
+    display: none;
+    @media @tablet-width {
+        display: none;
+    }
+    @media @desktop-width {
+        .right();
+    }
+}
+
+.header__list {
+    @media @tablet-width {}
+    @media @desktop-width {
+        .clear-ul();
+        margin-top: 6px;
+        width: 620px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+}
+
+.header__list-item {
+    @media @tablet-width {}
+    @media @desktop-width {
+        .a-decoration ();
+        display: flex;
+        font-weight: @fw-light;
+        font-size: @fz-med;
+        color: @white;
+        letter-spacing: 0.6px;
+    }
+}
+
+.header__slogan {
+    font-size:12px;
+    display: block;
+    width: 256px;
+    min-height: 60px;
+    margin: 0 auto;
+    font-weight: @fw_base;
+        font-family: @font-l;
+    text-align: center;
+    color: @white;
+    @media @tablet-width {
+        font-size: 20px;
+        width: 240px;
+        font-weight: @fw_base;
+        font-family: @font-l;
+        display: block;
+        outline: 1px dotted red;
+        float: left;
+        min-height: 170px;
+        text-align: center;
+    }
+    @media @desktop-width {
+        font-size: 25px;
+        width: 240px;
+        font-weight: @fw_base;
+        font-family: @font-l;
+        outline: 1px dotted red;
+        float: left;
+        display: block;
+        min-height: 170px;
+        text-align: center;
+        
+    }
+}
+
+.header__download {
+    @media @tablet-width {}
+    @media @desktop-width {
+        width:310px;
+        min-height: 300px;
+        outline: 1px dotted purple;
+    }
+}
+
+.header__download-btn {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+.header__logotypes-block {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+.header__phone-types {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+.header__apple-img {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+.header__android-img {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+.header__windows-img {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
