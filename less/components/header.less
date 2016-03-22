@@ -140,18 +140,30 @@
         outline: 1px dotted purple;
     }
 }
-
+// question!!!!
 .header__download-btn {
     @media @tablet-width {}
     @media @desktop-width {}
 }
-
+// question!!!!
 .header__logotypes-block {
+    display:flex;
+    width: 280px;
+    height: 90px;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
     @media @tablet-width {}
     @media @desktop-width {}
 }
 
 .header__phone-types {
+    color:@white;
+    font-size:@fz-lit;
+    line-height: 1;
+    font-weight:@fw_base;
+    .center();
+    font-family:@font-l;
     @media @tablet-width {}
     @media @desktop-width {}
 }
