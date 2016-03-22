@@ -1,8 +1,7 @@
 .header {
     width: 100%;
-   background: url("../img/iphone-hand-mobile.png") 0% 38% no-repeat,
-              url("../img/bg-back-mobile.jpg") 50% 0% no-repeat;
-    background-position: top center;
+    background:url("../img/iphone-hand-mobile.png") 0% 48% no-repeat,
+    url("../img/bg-back-mobile.jpg") 39% 20% no-repeat;
     background-color: @body-blue_color;
     margin-bottom: 24px;
     @media @tablet-width {
@@ -30,19 +29,18 @@
 
 .header__logo-link {
     width: 75px;
-  height: 22px;
-  outline: 1px dotted white;
-  color: #ffffff;
+    height: 22px;
+    outline: 1px dotted white;
+    color: #ffffff;
     color: @white;
     .left();
     @media @tablet-width {
-    width: 150px;
-     height: 50px;
-    
+        width: 150px;
+        height: 50px;
     }
     @media @desktop-width {
-      width: 150px;
-      height: 50px;
+        width: 150px;
+        height: 50px;
     }
 }
 
@@ -52,8 +50,6 @@
     height: 49px;
     background-image: url("");
     background-size: 428px;
-    
-    
     @media @tablet-width {
         .right();
     }
@@ -97,13 +93,13 @@
 }
 
 .header__slogan {
-    font-size:12px;
+    font-size: 12px;
     display: block;
     width: 256px;
     min-height: 60px;
     margin: 0 auto;
     font-weight: @fw_base;
-        font-family: @font-l;
+    font-family: @font-l;
     text-align: center;
     color: @white;
     @media @tablet-width {
@@ -127,14 +123,19 @@
         display: block;
         min-height: 170px;
         text-align: center;
-        
     }
 }
 
 .header__download {
+       margin-top: 350px;
+    width: 100%;
+    min-height: 270px;
+    outline: 1px dotted silver;
+    display: flex;
+    flex-wrap: wrap;
     @media @tablet-width {}
     @media @desktop-width {
-        width:310px;
+        width: 310px;
         min-height: 300px;
         outline: 1px dotted purple;
     }
