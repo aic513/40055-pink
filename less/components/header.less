@@ -1,11 +1,12 @@
-.header {
+// QUESTION!!!!!!
+.header { 
     width: 100%;
-    background:url("../img/iphone-hand-mobile.png") 0% 48% no-repeat,
-    url("../img/bg-back-mobile.jpg") 39% 20% no-repeat;
+    background: url("../img/iphone-hand-mobile.png") 0% 48% no-repeat, url("../img/bg-back-mobile.jpg") 39% 20% no-repeat;
     background-color: @body-blue_color;
     margin-bottom: 24px;
     @media @tablet-width {
-        background-image: url("../img/bg-back-mobile.jpg");
+        
+        // background: url("../img/bg-back-mobile.jpg") 0% 50% no-repeat; - не работает
     }
     @media @desktop-width {
         background-image: url("../img/bg-back-mobile.jpg");
@@ -18,8 +19,8 @@
     padding: 21px 0px;
     min-height: 45px;
     @media @tablet-width {
-        padding-top: 41px;
-        min-height: 65px;
+        min-height: 70px;
+        padding-top: 44px;
     }
     @media @desktop-width {
         padding-top: 41px;
@@ -36,7 +37,6 @@
     .left();
     @media @tablet-width {
         width: 150px;
-        height: 50px;
     }
     @media @desktop-width {
         width: 150px;
@@ -49,9 +49,9 @@
     width: 60px;
     height: 49px;
     background-image: url("");
-    background-size: 428px;
     @media @tablet-width {
         .right();
+        height: 0;
     }
     @media @desktop-width {
         display: none;
@@ -69,9 +69,13 @@
 }
 
 .header__list {
-    @media @tablet-width {}
+    display: none;
+    @media @tablet-width {
+        display: none;
+    }
     @media @desktop-width {
         .clear-ul();
+        font-family:@font-norm;
         margin-top: 6px;
         width: 620px;
         display: flex;
@@ -83,7 +87,7 @@
 .header__list-item {
     @media @tablet-width {}
     @media @desktop-width {
-        .a-decoration ();
+        text-decoration:@text-decoration;
         display: flex;
         font-weight: @fw-light;
         font-size: @fz-med;
@@ -104,6 +108,7 @@
     color: @white;
     @media @tablet-width {
         font-size: 20px;
+        margin-left: 36px;
         width: 240px;
         font-weight: @fw_base;
         font-family: @font-l;
@@ -113,6 +118,7 @@
         min-height: 170px;
         text-align: center;
     }
+    // почему шрифт не меняется?!
     @media @desktop-width {
         font-size: 25px;
         width: 240px;
@@ -127,44 +133,68 @@
 }
 
 .header__download {
-       margin-top: 350px;
+    margin-top: 350px;
     width: 100%;
     min-height: 270px;
     outline: 1px dotted silver;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    @media @tablet-width {}
+    @media @tablet-width {
+        width: 307px;
+        min-height: 250px;
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
     @media @desktop-width {
         width: 310px;
         min-height: 300px;
         outline: 1px dotted purple;
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 }
+
 // question!!!!
 .header__download-btn {
     @media @tablet-width {}
     @media @desktop-width {}
 }
+
 // question!!!!
 .header__logotypes-block {
-    display:flex;
+    display: flex;
     width: 280px;
     height: 90px;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-around;
-    @media @tablet-width {}
-    @media @desktop-width {}
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @media @tablet-width {
+        width: 210px;
+        height: 70px;
+        align-self:center;
+    }
+    @media @desktop-width {
+        
+    }
 }
 
 .header__phone-types {
-    color:@white;
-    font-size:@fz-lit;
+    color: @white;
+    font-size: @fz-lit;
     line-height: 1;
-    font-weight:@fw_base;
+    font-weight: @fw_base;
     .center();
-    font-family:@font-l;
-    @media @tablet-width {}
+    font-family: @font-l;
+    @media @tablet-width {
+         font-size: @fz-med;
+         margin-top: 30px;
+
+    }
     @media @desktop-width {}
 }
 
