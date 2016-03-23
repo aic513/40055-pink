@@ -1,15 +1,199 @@
-.review-slider{
-@media @tablet-width {}
-@media @desktop-width {}	
+.review-slider {
+    position: relative;
+    @media @tablet-width {
+       
+    }
+    @media @desktop-width {
+        
+    }
+}
+
+.review-slider__inner {
+     overflow: hidden;
+    @media @tablet-width {
+        
+    }
+    @media @desktop-width {}
 }
 
 .review-slider__all{
-@media @tablet-width {}
-@media @desktop-width {}	
+   -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+    width: 300%;
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+.review-slider__slide {
+    min-height:220px;
+    width: 280px;
+    float: left;
+    color:#283645;
+    font-size:@fz-lit;
+    line-height:1;
+    @media @tablet-width {}
+    @media @desktop-width {}
 }
 
-.review-slider__slide{
-@media @tablet-width {}
-@media @desktop-width {}	
+.review-slider__slide h3 {
+    color:black;
+    @media @tablet-width {}
+    @media @desktop-width {}
 }
 
+
+.review-slider__slide p {
+    
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+
+.toggle-controls{
+    position: absolute;
+    width: 80px;
+    height: 8px;
+    margin-left: -30px;
+    text-align: center;
+    z-index: 5;
+@media @tablet-width {}
+@media @desktop-width {}    
+}
+
+.toggle-controls label{
+    display: inline-block;
+    vertical-align: baseline;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: #fff;
+    border: 3px solid #fff;
+    vertical-align: top;
+    cursor: pointer;
+    border-radius: 50%;
+    @media @tablet-width {}
+@media @desktop-width {}   
+}
+
+input[id^="btn-"] {
+    display: none;
+}
+
+#btn-1:checked ~ .toggle-controls label[for="btn-1"],
+#btn-2:checked ~ .toggle-controls label[for="btn-2"],
+#btn-3:checked ~ .toggle-controls label[for="btn-3"] {
+    background-color: #c1c1c1;
+      @media @tablet-width {}
+@media @desktop-width {}   
+}
+
+
+#btn-1:checked ~ .review-slider__inner .review-slider__all {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+      @media @tablet-width {}
+@media @desktop-width {}   
+}
+
+#btn-2:checked ~ .review-slider__inner .review-slider__all {
+    -webkit-transform: translate(-280px);
+    -ms-transform: translate(-280px);
+    transform: translate(-280px);
+      @media @tablet-width {}
+@media @desktop-width {}   
+}
+
+#btn-3:checked ~ .review-slider__inner .review-slider__all {
+    -webkit-transform: translate(-560px);
+    -ms-transform: translate(-560px);
+    transform: translate(-560px);
+      @media @tablet-width {}
+@media @desktop-width {}   
+}
+
+
+
+
+
+
+
+
+
+
+// // &:before {
+// //     .psevdo-elem ();
+// //     width: 900px;
+// //     height: 470px;
+// //     top: 115%;
+// //     left: -20px;
+// //     z-index: -1;
+// //     background-color: @body-slide_color;
+// //     transform: rotate(175deg);
+// // }
+
+// // @media @tablet-width {
+// //     transform: rotate(0deg);
+// //     top: 78 %;
+// //     left: -250 px;
+// //     width: 1400 px;
+// // }
+
+// @media @desktop-width {
+//     width: 1900px;
+//     top: 110%;
+// }
+
+
+// .review-slider__arrow {
+//     position: relative;
+// }
+
+// .review-slider__arrow--next {
+//     display: none;
+//     &:hover {
+//         opacity: 1;
+//     }
+//     &:active {
+//         opacity: 0.3;
+//     }
+//     @media @desktop-width {
+//         cursor: pointer;
+//         opacity: 0.7;
+//         z-index: 5;
+//         display: block;
+//         position: absolute;
+//         top: -177px;
+//         left: 100px;
+//         width: 80px;
+//         height: 70px;
+//         background-image: url("");
+//         background-position: -113px -79px;
+//         background-repeat: no-repeat;
+//         background-size: 400px;
+//     }
+// }
+
+// .review-slider__arrow--prev {
+//     display: none;
+//     &:hover {
+//         opacity: 1;
+//     }
+//     &:active {
+//         opacity: 0.3;
+//     }
+//     @media @desktop-width {
+//         cursor: pointer;
+//         opacity: 0.7;
+//         z-index: 5;
+//         display: block;
+//         position: absolute;
+//         top: -176px;
+//         left: 1017px;
+//         width: 80px;
+//         height: 70px;
+//         background-image: url();
+//         background-position: -169px -80px;
+//         background-repeat: no-repeat;
+//         background-size: 400px;
+//     }
+// }
