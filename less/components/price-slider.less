@@ -1,46 +1,208 @@
-.price-slider{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price-slider__table{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price-slide{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price-slide__col-title{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price-slide__col-text{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price-slide--hit{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price__td{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-.price__td--ok{
-@media @tablet-width {}
-@media @desktop-width {}	
-}
-
-
-
-
-
-
-
+    .price-slider {
+        display: flex;
+        background: grey url("../img/bg-triangle-white.svg") 0% -15% no-repeat;
+        color: @deep-purple;
+        padding: 90px 0 50px;
+        text-transform: uppercase;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        @media @tablet-width {
+            display: flex;
+            background: grey url("../img/bg-triangle-white.svg") 100% 0% no-repeat;
+            color: @deep-purple;
+            padding: 90px 0 50px;
+            text-transform: uppercase;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+        }
+        @media @desktop-width {
+            display: flex;
+            background: grey url("../img/bg-triangle-white.svg") 100% 0% no-repeat;
+            color: @deep-purple;
+            padding: 120px 0 70px;
+            text-transform: uppercase;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+        }
+    }
+    
+    .price-slider__table {
+        display: table;
+        vertical-align: middle;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        border-collapse: collapse;
+        width: 820px;
+        margin-left: -255px;
+        @media @tablet-width {
+            display: table;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            border-collapse: collapse;
+            width: 600px;
+        }
+        @media @desktop-width {
+            display: table;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            border-collapse: collapse;
+            width: 900px;
+        }
+    }
+    
+    .price__td {
+        position: relative;
+        display: table-cell;
+        background: @white;
+        border: 2px solid #e5e5e5;
+        text-align: left;
+        padding: 20px 0 20px 20px;
+        font-size: @fz-lit;
+        font-weight: @fw_base;
+        line-height: 30px;
+        text-transform: uppercase;
+        @media @tablet-width {
+            position: relative;
+            display: table-cell;
+            background: white;
+            border: 2px solid #e5e5e5;
+            text-align: left;
+            padding: 20px 0 20px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            text-transform: none;
+            &:after {
+                position: absolute;
+                top: 20px;
+                left: 220px;
+                content: '';
+                display: none;
+                width: 0px;
+                height: 0px;
+                background: url() no-repeat center;
+            }
+        }
+        @media @desktop-width {
+            position: relative;
+            display: table-cell;
+            background: white;
+            border: 2px solid #e5e5e5;
+            text-align: left;
+            padding: 20px 0 20px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            text-transform: none;
+        }
+    }
+    
+    .price__slide {
+        background: @deep-purple;
+        padding: 20px;
+        color: $white;
+        border: 2px solid #e5e5e5;
+        border-top: none;
+        font-size: @fz-med;
+        font-weight: @fw_bold;
+        line-height: 30px;
+        position: relative;
+        @media @tablet-width {
+            background: @deep-purple;
+            padding: 20px;
+            color: @white;
+            border: 2px solid #e5e5e5;
+            border-top: none;
+            font-size: @fz-med;
+            font-weight: @fw_bold;
+            line-height: 30px;
+            position: relative;
+        }
+        @media @desktop-width {
+            background: @deep-purple;
+            padding: 20px;
+            color: @white;
+            border: 2px solid #e5e5e5;
+            border-top: none;
+            font-size: @fz-med;
+            font-weight: @fw_bold;
+            line-height: 30px;
+            position: relative;
+        }
+    }
+    
+    .price-slide--top {
+        @media @tablet-width {
+            background: grey;
+            border: none;
+        }
+        @media @desktop-width {
+            background: grey;
+            border: none;
+        }
+    }
+    
+    .price__slide--standart {
+        &:after {
+            position: absolute;
+            top: -14px;
+            left: -13px;
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: url() no-repeat center;
+        }
+        @media @tablet-width {
+            &:after {
+                position: absolute;
+                top: -14px;
+                left: -13px;
+                content: '';
+                display: block;
+                width: 100px;
+                height: 100px;
+                background: url() no-repeat center;
+            }
+        }
+        @media @desktop-width {
+            &:after {
+                position: absolute;
+                top: 20px;
+                left: 220px;
+                content: '';
+                display: none;
+                width: 0px;
+                height: 0px;
+                background: url() no-repeat center;
+            }
+        }
+    }
+    
+    .price__cost {
+        font-size: 24px;
+        font-weight: @fw-light;
+        line-height: 30px;
+        color:white;
+        text-transform: uppercase;
+        @media @tablet-width {}
+        @media @desktop-width {}
+    }
+    
+    .toggle-controls--table {
+        top: 410px;
+        @media @tablet-width {
+            display: none;
+        }
+        @media @desktop-width {
+            display: none;
+        }
+    }

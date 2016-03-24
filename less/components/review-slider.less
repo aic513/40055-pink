@@ -1,199 +1,149 @@
 .review-slider {
     position: relative;
+    min-height: 310px;
+    outline: 1px dotted blue;
+    margin: 0 auto;
     @media @tablet-width {
-       
+    display: flex;
+    flex-direction: column-reverse;
+    height: 197px;
+
     }
     @media @desktop-width {
-        
+        justify-content: center;
     }
 }
 
-.review-slider__inner {
-     overflow: hidden;
-    @media @tablet-width {
-        
-    }
-    @media @desktop-width {}
-}
-
-.review-slider__all{
-   -webkit-transition: -webkit-transform 1s;
-    transition: transform 1s;
-    width: 300%;
-    @media @tablet-width {}
-    @media @desktop-width {}
-}
 .review-slider__slide {
-    min-height:220px;
-    width: 280px;
+    min-height: 220px;
+    // width: 280px;
     float: left;
-    color:#283645;
-    font-size:@fz-lit;
-    line-height:1;
+    color: #283645;
+    font-size: @fz-lit;
+    line-height: 1;
+    @media @tablet-width {
+
+    }
+    @media @desktop-width {}
+}
+
+// как перескакивают после умегьшения экрана????
+.review-slider__slide header{
+  font-size: 1.8em;
+  font-weight: @fw_medium;
+  text-align: center;
+    @media @tablet-width {
+         flex-basis: 33px;
+        font-size: 2em;
+        line-height: 3em;
+        padding-bottom: 0px;
+        letter-spacing: 0.5px;
+    }
+    @media @desktop-width {
+         font-size: 2.4em;
+    }
+}
+
+.review-slider__slide div{
+     display: none;
+    @media @tablet-width {
+         display: block;
+        flex-basis: 28px;
+        font-size: 1.4em;
+        text-align: center;
+        line-height: 3em;
+        font-weight: 400;
+    }
+    @media @desktop-width {
+        font-size: 1.8em;
+    }
+}
+
+.review-slider  input[type=radio] {
+    position:absolute;
+    opacity:0;
+    @media @tablet-width {
+        display: none;
+    }
+    @media @desktop-width {
+        display: none;
+    }
+}
+
+
+
+.review-slider__slide:nth-child(2) {
+    display: none;
+    
     @media @tablet-width {}
     @media @desktop-width {}
 }
 
-.review-slider__slide h3 {
-    color:black;
-    @media @tablet-width {}
-    @media @desktop-width {}
-}
-
-
-.review-slider__slide p {
+.review-slider__slide:nth-child(3) {
+    display: none;
     
     @media @tablet-width {}
     @media @desktop-width {}
 }
 
 
-.toggle-controls{
-    position: absolute;
-    width: 80px;
-    height: 8px;
-    margin-left: -30px;
-    text-align: center;
-    z-index: 5;
-@media @tablet-width {}
-@media @desktop-width {}    
+
+.review-slider__slide p {
+     font-size: 1.4em;
+      font-weight:@fw_base;
+      .center;
+      line-height: 3rem;
+      margin: 0px 20px;
+    @media @tablet-width {
+         font-size: 1.8em;
+        flex-basis: 125px;
+        padding: 0px 20px 0px 20px;
+    }
+    @media @desktop-width {
+        width: 700px;
+        margin: 0 auto;
+    }
 }
 
-.toggle-controls label{
+.toggle-controls {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    border: 1px dotted green;
+    z-index: 1000;
+    @media @tablet-width {
+        display: none;
+    }
+    @media @desktop-width {}
+}
+
+.toggle-controls label {
     display: inline-block;
-    vertical-align: baseline;
     width: 4px;
     height: 4px;
     margin: 0 3px;
-    background: #fff;
-    border: 3px solid #fff;
+    background: white;
+    border: 3px solid white;
     vertical-align: top;
-    cursor: pointer;
     border-radius: 50%;
+    cursor: pointer;
     @media @tablet-width {}
-@media @desktop-width {}   
+    @media @desktop-width {}
 }
 
-input[id^="btn-"] {
+
+ .review-slider__arrow {
     display: none;
-}
+     
+     @media @tablet-width {
+        position: relative;
+     }
+    @media @desktop-width {
+        display: none;
+    }
+ }
 
-#btn-1:checked ~ .toggle-controls label[for="btn-1"],
-#btn-2:checked ~ .toggle-controls label[for="btn-2"],
-#btn-3:checked ~ .toggle-controls label[for="btn-3"] {
-    background-color: #c1c1c1;
-      @media @tablet-width {}
-@media @desktop-width {}   
-}
-
-
-#btn-1:checked ~ .review-slider__inner .review-slider__all {
-    -webkit-transform: translate(0);
-    -ms-transform: translate(0);
-    transform: translate(0);
-      @media @tablet-width {}
-@media @desktop-width {}   
-}
-
-#btn-2:checked ~ .review-slider__inner .review-slider__all {
-    -webkit-transform: translate(-280px);
-    -ms-transform: translate(-280px);
-    transform: translate(-280px);
-      @media @tablet-width {}
-@media @desktop-width {}   
-}
-
-#btn-3:checked ~ .review-slider__inner .review-slider__all {
-    -webkit-transform: translate(-560px);
-    -ms-transform: translate(-560px);
-    transform: translate(-560px);
-      @media @tablet-width {}
-@media @desktop-width {}   
-}
-
-
-
-
-
-
-
-
-
-
-// // &:before {
-// //     .psevdo-elem ();
-// //     width: 900px;
-// //     height: 470px;
-// //     top: 115%;
-// //     left: -20px;
-// //     z-index: -1;
-// //     background-color: @body-slide_color;
-// //     transform: rotate(175deg);
-// // }
-
-// // @media @tablet-width {
-// //     transform: rotate(0deg);
-// //     top: 78 %;
-// //     left: -250 px;
-// //     width: 1400 px;
-// // }
-
-// @media @desktop-width {
-//     width: 1900px;
-//     top: 110%;
-// }
-
-
-// .review-slider__arrow {
-//     position: relative;
-// }
-
-// .review-slider__arrow--next {
-//     display: none;
-//     &:hover {
-//         opacity: 1;
-//     }
-//     &:active {
-//         opacity: 0.3;
-//     }
-//     @media @desktop-width {
-//         cursor: pointer;
-//         opacity: 0.7;
-//         z-index: 5;
-//         display: block;
-//         position: absolute;
-//         top: -177px;
-//         left: 100px;
-//         width: 80px;
-//         height: 70px;
-//         background-image: url("");
-//         background-position: -113px -79px;
-//         background-repeat: no-repeat;
-//         background-size: 400px;
-//     }
-// }
-
-// .review-slider__arrow--prev {
-//     display: none;
-//     &:hover {
-//         opacity: 1;
-//     }
-//     &:active {
-//         opacity: 0.3;
-//     }
-//     @media @desktop-width {
-//         cursor: pointer;
-//         opacity: 0.7;
-//         z-index: 5;
-//         display: block;
-//         position: absolute;
-//         top: -176px;
-//         left: 1017px;
-//         width: 80px;
-//         height: 70px;
-//         background-image: url();
-//         background-position: -169px -80px;
-//         background-repeat: no-repeat;
-//         background-size: 400px;
-//     }
-// }

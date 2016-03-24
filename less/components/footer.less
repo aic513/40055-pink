@@ -1,54 +1,189 @@
-.footer{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer {
+    background-color: @white;
+    color: @deep-purple;
+    position: relative;
+    &:after {
+        // position: absolute;
+        // top: 400px;
+        // left: 0;
+        // display: block;
+        // content: '';
+        // width: 320px;
+        // height: 100px;
+        // // background: url(../img/bg-triangle-white-footer.svg) 50% 100% no-repeat;
+        // z-index: 1000;
+    }
+    @media @tablet-width {
+        &:after {
+            // position: absolute;
+            //   top: 410px;
+            //   left: 0;
+            //   display: block;
+            //   content: '';
+            //   width: 100%;
+            //   height: 100%;
+            //   transform: scaleX(1.2);
+            //   background: url(../img/bg-triangle-white-footer.svg) 50% 0% no-repeat;
+            //   z-index: 1000;
+        }
+    }
+    @media @desktop-width {
+    	 &:after {
+            // position: absolute;
+            //   top: 410px;
+            //   left: 0;
+            //   display: block;
+            //   content: '';
+            //   width: 100%;
+            //   height: 100%;
+            //   transform: scaleX(1.2);
+            //   background: url(../img/bg-triangle-white-footer.svg) 50% 0% no-repeat;
+            //   z-index: 1000;
+        }
+        
+    }
 }
 
-.footer__contacts{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__contacts {
+    .center();
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    min-height: 270px;
+    margin-top: 35px;
+    @media @tablet-width {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+    width: 620px;
+    justify-content: space-around;
+    }
+    @media @desktop-width {
+    	display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+         align-items: center;
+        justify-content: space-around;
+    	width: 870px;
+    	min-height: 260px;
+    }
 }
 
-.footer__header{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__header {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    @media @tablet-width {
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        margin-bottom: 25px;
+        min-height: 90px;
+        outline: 2px dotted red;
+        font-size: 50px;
+        font-family: @font-l;
+    }
+    @media @desktop-width {
+    	display: block;
+         width: 678px;
+        margin-bottom: 25px;
+        min-height: 90px;
+        outline: 2px dotted red;
+        font-size: 50px;
+        font-family: @font-l;
+    }
 }
 
-.footer__call-us{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__call-us {
+    @media @tablet-width {
+        width: 210px;
+        min-height: 67px;
+    }
+    @media @desktop-width {
+    	display: inline-block;
+    }
 }
 
-.footer__write-us{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer-title {
+    font-size: 18px;
+    font-family: @fw_bold;
+    @media @tablet-width {}
+    @media @desktop-width {}
 }
 
-.footer__guests{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer-pink {
+    color: @pink;
+    @media @tablet-width {}
+    @media @desktop-width {}
 }
 
-.footer__map{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__write-us {
+    @media @tablet-width {
+        width: 240px;
+        min-height: 60px;
+    }
+    @media @desktop-width {
+    	display: inline-block;
+    }
 }
 
-.footer__triangle{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__guests {
+    @media @tablet-width {
+       
+        
+    }
 }
 
-.footer-all{
-@media @tablet-width {}
-@media @desktop-width {}	
+@media @desktop-width {
+	
+	
 }
 
-.footer-all__logo-glasses{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__map {
+    @media @tablet-width {}
+    @media @desktop-width {}
 }
 
-.footer-all__developers{
-@media @tablet-width {}
-@media @desktop-width {}	
+.footer__triangle {
+    @media @tablet-width {}
+    @media @desktop-width {}
+}
+
+.footer-all {
+    display: none;
+    @media @tablet-width {
+    	display: flex;
+    	align-items: center;
+    	flex-direction: row;
+    	justify-content: space-between;
+        min-height: 126px;
+
+    }
+    @media @desktop-width {
+
+    }
+}
+
+.footer-all__logo-glasses {
+    @media @tablet-width {
+    	width: 150px;
+    	height: 70px;
+    }
+    @media @desktop-width {
+    	width: 150px;
+    	height: 70px;
+    }
+}
+
+.footer-all__developers {
+    @media @tablet-width {
+    	width: 150px;
+    	height: 60px;
+    }
+    @media @desktop-width {
+    	width: 150px;
+    	height: 70px;
+    }
 }
